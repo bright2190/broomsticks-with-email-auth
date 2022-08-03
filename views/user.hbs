@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <h3>
+            Welcome to the Dashboard {{ firstname }}
+
+            <div class="mt-2">
+                <form action="/logout" method="POST">
+                    <button>Log out</button>
+                </form>
+            </div>
+
+
+            <div>
+                
+            </div>
+        </h3>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        
+       <div class="col-md-10">
+        <h5>Create new post</h5>
+        <hr>
+         <form class="form" method="POST" id="create-post-form">
+            <div class="form-group">
+                <label>
+                    Post Title
+                </label>
+                <input type="text" name='post_title' class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>
+                    Post Content
+                </label>
+                <textarea class="form-control" name="post_content" id="post_content"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="button" class="btn btn-primary" id="create-post-form-btn">Create Post</button>
+            </div>
+        </form>
+       </div>
+    </div>
+</div>
+
+<script src="/thirdparties/ckeditor/ckeditor.js"></script>
+<script>
+    
+</script>

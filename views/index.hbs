@@ -1,0 +1,6 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+<P>{{ loginStatus.loginMessage }}</P>
+{{#if loginStatus.is_logged_in }}
+   <p><a href="/logout"><strong>Log Out</strong></a></p>
+{{/if}}
